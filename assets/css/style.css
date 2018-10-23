@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    background: #4faad4;
+}
+
+.center {
+    text-align: center;
+}
+
+img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 500px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.8);
+}
+
+.bloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background: rgba(92, 92, 92, 0.3);
+    max-width: 60%;
+    margin-top: -40px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.4);
+}
+
+blockquote {
+    font-size: 34px;
+    font-weight: 600;
+    margin: 50px 35px 35px 35px;
+}
+
+cite {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+cite:before, cite:after {
+    content: '~';
+    margin: 0 14px;
+}
