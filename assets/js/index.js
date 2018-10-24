@@ -26,3 +26,19 @@ xhr.onload = function() {  //Call the onload
     }
 }
 xhr.send(); //Call send
+
+const body = document.getElementById('body');
+
+let changeColor = (index, color) => {
+    let col = document.getElementsByClassName('color')[index];
+
+    col.addEventListener('click', function() {
+        body.style.backgroundColor = `${color}`;
+    });
+};
+
+changeColor(0, '#4faad4');
+changeColor(1, '#5fd44f');
+changeColor(2, '#d4d24f');
+changeColor(3, '#d44f4f');
+changeColor(4, '#b9b9b9');
